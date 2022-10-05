@@ -4,10 +4,11 @@ from user import User
 
 
 def main():
-    print("""To play the game is very simple, you will start with 300 points. To begin you will be shown a card at random. You will need
-to guess whether you think the next card will be higher in value or lower. Guess right and you earn 100 points. Guess wrong and you 
-will lose 75. Reach 1,000 points and you win the game, reach 0 and you lose. 
-Good luck!""")
+    print()
+    print("""To play the game is very simple, you will start with 300 points. To begin you will be shown a card at random. You will need to guess whether you think the next card will be higher in value or lower. Guess right and you earn 100 points. Guess wrong and you will lose 75. Reach 1,000 points and you win the game, reach 0 and you lose.""")
+    print()
+    print("Good luck!")
+    print()
 
     # Initialize a card object
     card = Card()
@@ -21,8 +22,12 @@ Good luck!""")
     # Loop as long as the user has points
     while user.score > 0:
         # Get the guess from the user
-        guess = str(input(
-            "Please enter whether you think the next card will be higher or lower. (h/l)\n").lower())
+        guess = str(input("Please enter whether you think the next card will be higher or lower. (h/l)\n").lower())
+
+        # Let player only use l or h, and not other letter
+        while guess != "l" and guess != "h":
+            print("You need to choose between only h or l!")
+            guess = str(input("Please enter whether you think the next card will be higher or lower. (h/l)\n").lower())
 
         # Set if the guess was correct or not
         correct_guess = card.guess(guess)
@@ -44,7 +49,8 @@ Good luck!""")
         # Check if the user has won
         if user.win():
             # Display winning message
-            print("You have won the game.")
+            print(f"Your score is {user.score}")
+            print("You have won the game!")
             # End the game
             break
         # Check is the user has lost

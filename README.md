@@ -20,8 +20,7 @@ Hilo is a quick game where the player is guessing what will be the next card dra
 # Object Design -> Class Design
 
 • object user -> class user
-• object total -> class total
-• random_card
+• object card -> class card
 
 ## object: User
 

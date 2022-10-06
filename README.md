@@ -55,8 +55,8 @@ The project files and folders will be organized as follows:
 
 ```
 root                    (project root folder)
-+-- hilo                (source code for game)
-  +-- game              (specific classes)
++-- user.py               (source code for game)
+  +-- card.py              (specific classes)
   +-- main.py       (program entry point)
 +-- README.md           (general info)
 ```

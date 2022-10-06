@@ -22,9 +22,9 @@ Hilo is a quick game where the player is guessing what will be the next card dra
 • object user -> class user
 • object card -> class card
 
-## object: User
+## object: user
 
-    # Resposibility:
+    # Responsibility:
     - to guess if the next card displayed would be higher or lower than the current card displayed.
 
     # Behaviours:
@@ -35,16 +35,30 @@ Hilo is a quick game where the player is guessing what will be the next card dra
     - Higher or Lower
     - Play again?
 
-## object: Total
+## object: card
 
     # Responsibility:
-    - to sum up all user's player score and display the total
+    - to tell the program to run through random cards with values between 1 - 13.
 
     # Behaviours:
-    - display total score
+    - No repeats 
 
     # State:
-    - user score
+    - Card value
+   
+## object: main 
+
+    # Responsibility:
+    - Run user input of h/l 
+    - Calculate and store user points
+    - Import and run class card and functions 
+
+    # Behaviours:
+    - Winner when they reach 1000 points 
+    - Lose when they have 0 
+
+    # State:
+    - Winner or Loser 
 
 ## Project Structure
 

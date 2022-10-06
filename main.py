@@ -21,13 +21,20 @@ def main():
 
     # Loop as long as the user has points
     while user.score > 0:
+        # Display the card value and the user score
+        print(f"The card is: {card.prev_value}")
+        print(f"Your score is {user.score}")
         # Get the guess from the user
-        guess = str(input("Please enter whether you think the next card will be higher or lower. (h/l)\n").lower())
+        guess = str(input(
+            "Please enter whether you think the next card will be higher or lower. (h/l)\n").lower())
+        # Display the next card value
+        print(f"Next card was: {card.value}")
 
         # Let player only use l or h, and not other letter
         while guess != "l" and guess != "h":
             print("You need to choose between only h or l!")
-            guess = str(input("Please enter whether you think the next card will be higher or lower. (h/l)\n").lower())
+            guess = str(input(
+                "Please enter whether you think the next card will be higher or lower. (h/l)\n").lower())
 
         # Set if the guess was correct or not
         correct_guess = card.guess(guess)
@@ -50,13 +57,13 @@ def main():
         if user.win():
             # Display winning message
             print(f"Your score is {user.score}")
-            print("You have won the game!")
+            print("Congratulations! You have won the game! >.<")
             # End the game
             break
         # Check is the user has lost
         elif user.lose():
             # Display losing message
-            print("You have lost the game.")
+            print("You have lost the game. :(")
             # End the game
             break
         else:

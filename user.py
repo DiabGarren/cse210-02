@@ -6,7 +6,7 @@ class User:
         Return: 
             None 
         """
-        self.score = 1
+        self.score = 300
     
     def change_score(self, guess):
         """Checks if the user's guess was correct, and adjusts the 

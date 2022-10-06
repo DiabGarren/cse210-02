@@ -23,12 +23,12 @@ class Card:
         """
 
         # Generate a random number between 0 and 100
-        next_value = r(0, 100)
+        next_value = r(0, 13)
 
         # If the new number is equal to the previous number
         while next_value == self.prev_value:
             # Generate another random number between 0 and 100
-            next_value = r(0, 100)
+            next_value = r(0, 13)
 
         # This is to keep track of the previous number so
         #   that next number wont be the same and for comparing
@@ -48,12 +48,12 @@ class Card:
             False: If the guess is incorrect
         """
 
-        # If the user guessed higher and the current card value is higher 
+        # If the user guessed higher and the current card value is higher
         #   than the previous card value
         if guess.lower() == "h" and self.value > self.prev_value:
             return True
 
-        # If the user guessed lower and the current card value is lower 
+        # If the user guessed lower and the current card value is lower
         #   than the previous card value
         elif guess.lower() == "l" and self.value < self.prev_value:
             return True

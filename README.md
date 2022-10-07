@@ -104,8 +104,8 @@ root                    (project root folder)
 
 ---
 
-- Mazzarella-Woelzl, Alison Reed
-- Saenz, Paula
+- Mazzarella-Woelzl, Alison Reed (maz12005@byui.edu)
+- Saenz, Paula (sae21002@byui.edu)
 - Shevtsov, Denis
 - Ogboanoh, Richard Oshiomole Ephraim
 - Diab, Garren Mark

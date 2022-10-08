@@ -4,11 +4,13 @@ from user import User
 
 
 def main():
-    print()
-    print("""To play the game is very simple, you will start with 300 points. To begin you will be shown a card at random. You will need to guess whether you think the next card will be higher in value or lower. Guess right and you earn 100 points. Guess wrong and you will lose 75. Reach 1,000 points and you win the game, reach 0 and you lose.""")
-    print()
-    print("Good luck!")
-    print()
+    print(
+"To play the game is very simple, you will start with 300 points. \
+To begin you will be shown a card at random. You will need to guess \
+whether you think the next card will be higher in value or lower. \
+Guess right and you earn 100 points. Guess wrong and you will lose \
+75. Reach 1,000 points and you win the game, reach 0 and you lose.\
+\nGood luck!\n")
 
     # Initialize a card object
     card = Card()
@@ -16,7 +18,7 @@ def main():
     card.next_card()
 
     # Initialize a user object
-    # Creates a user object with a score of 1 point
+    # Creates a user object with a score of 300 point
     user = User()
 
     # Loop as long as the user has points

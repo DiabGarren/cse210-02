@@ -59,29 +59,4 @@ class User:
             return True
         else:
             return False
-        Return:
-            True: If the user has more than 1000 points
-            False: If the user has less than 1000 points
-        """
-
-        # If the current score is greater than or equal to 1000 points
-        if self.score >= 1000:
-            return True
-        else:
-            return False
-    
-    def lose(self):
-        """If the user has less than 0 points, then the user 
-        loses.\n
-        Parameters:
-            None
-        Return:
-            True: If the user has less than 0 points
-            False: If the user has has than 0 points
-        """
-
-        # If the current score is less than or equal to 0 points
-        if self.score <= 0:
-            return True
-        else:
-            return False
+        
